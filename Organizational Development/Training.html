@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap Afrique</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+       <header class="onscroll">
+             <div class="logo">
+                             <a href="">
+                                    <img src="../images/leap-logo.png" alt="">
+                             </a>
+                      </div>
+                      <nav>
+                           <ul>
+                                 <li><a href="../index.html">Home</a></li>
+                                 <li><a href="../about.html">About Us</a></li>
+                                 <li class="active"><a href="">Services</a></li>
+                                 <li><a href="../contact.html">Contact Us</a></li>
+                           </ul>
+
+                           <div class="nav-btn">
+                                  <a href="../contact.html">Get in Touch</a>
+                           </div>
+                      </nav>
+                      <span class="navTrigger">
+                           <i></i>
+                           <i></i>
+                           <i></i>
+                      </span>
+       </header>
+
+     <div class="single-wrapper">
+            <div class="inner-row">
+                    <div class="single-service-content">
+                           <h1>Training</h1>
+
+                           <div class="single-service-row">
+                                 <div class="service-description">
+                                     <div class="service-list">
+                                         <ul>
+                                             <li>Our courses are based on the latest research on psychology and social sciences in the learning and development arena.</li>
+                                             <li>Our trainers are highly qualified, with years of experience in training, and holding senior positions in the corporate world. Therefore, they have a wealth of experience to bring to the table and understand and appreciate the pressures and challenges that the modern workforce is under today. </li>
+                                             <li>Our training courses are unique in that you can combine it with our psychometric instruments and coaching interventions to make it more enriching!</li>
+                                         </ul>
+                                     </div>
+                                     <p>Our training is available to you as both in-house and open - courses. We can also tailor a combination of programmes which you can spread over your calendar year. We are flexible in our approach, without compromising on the standards of delivery and content of our courses. </p>
+                                 </div>
+                                 <div class="service-image">
+                                        <img src="../images/service2.jpg" alt="">
+                                 </div>
+                           </div>
+                          <p>Our distinctive proposition: We do not simply just shake hands and say goodbye after your course - each delegate receives support from their trainer - this means that whilst you are implementing what you have learned, we will be there to help you if you need us. You can email or call your trainer for guidance and support - all this comes as part of the service! </p>
+                           <p>At LEAP, we run the full mile with you! </p>
+                    </div>
+            </div>
+
+
+            <section id="call-to-action">
+                <div class="inner-row">
+                       <div class="call-to-action-content">
+                                <h1>We curate bespoke solutions using scientific and creative approaches to address the specific needs of our clients.</h1>
+                                <p>Our methodologies are scientific, globally recognised and accredited, practical and results oriented.</p>
+
+                                <div class="btn-section">
+                                      <a href="../contact.html">Get in Touch</a>
+                                </div>
+                       </div>
+                </div>
+        </section>
+ 
+        <footer>
+             <div class="inner-row">
+                   <div class="footer-logo">
+                          <img src="../images/leap-logo.png" alt="">
+                   </div>
+                   <div class="footer-content">
+                          <p>Leap is headquartered in Nairobi, Kenya.</p>
+                          <p>Our programs and solutions have no boundaries - we serve executives, leaders, business owners and organizations across the globe.</p>
+                   </div>
+                   <div class="footer-social-links">
+                          <ul>
+                               <li><a href=""><i class="uil uil-facebook-f"></i></a></li>
+                               <li><a href=""><i class="uil uil-twitter"></i></a></li>
+                               <li><a href=""><i class="uil uil-instagram"></i></a></li>
+                               <li><a href=""><i class="uil uil-linkedin-alt"></i></a></li>
+                          </ul>
+                   </div>
+             </div>
+        </footer>
+        <div class="copyright">
+               <p>Leap Afrique &COPY;2022 All rights Reserved | Powered by <a href="">Amari Consulting Ltd</a></p>
+        </div>
+     </div>
+
+     <script>
+               const header = document.querySelector("header")
+               const i_moja = document.querySelectorAll(".navTrigger i")
+               const trigger_btn = document.querySelector(".navTrigger")
+               const navbar = document.querySelector("nav")
+
+
+               window.addEventListener("scroll", ()=>{
+                   if(window.scrollY > 100){
+                       header.classList.add("onscroll")
+                   }else{
+                       if(!header.classList.contains("onscroll")){
+                             header.classList.remove("onscroll")
+                       }
+                   }
+               })
+
+            trigger_btn.addEventListener("click", ()=>{
+                trigger_btn.classList.toggle("active")
+                navbar.classList.toggle("show")
+                if(window.innerWidth < 860){
+                    header.classList.toggle("whiten")
+                }
+            })
+     </script>
+    </body>
+</html>

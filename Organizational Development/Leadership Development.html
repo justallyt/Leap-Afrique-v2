@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap Afrique</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+       <header class="onscroll">
+             <div class="logo">
+                             <a href="">
+                                    <img src="../images/leap-logo.png" alt="">
+                             </a>
+                      </div>
+                      <nav>
+                           <ul>
+                                 <li><a href="../index.html">Home</a></li>
+                                 <li><a href="../about.html">About Us</a></li>
+                                 <li class="active"><a href="">Services</a></li>
+                                 <li><a href="../contact.html">Contact Us</a></li>
+                           </ul>
+
+                           <div class="nav-btn">
+                                  <a href="../contact.html">Get in Touch</a>
+                           </div>
+                      </nav>
+                      <span class="navTrigger">
+                           <i></i>
+                           <i></i>
+                           <i></i>
+                      </span>
+       </header>
+
+     <div class="single-wrapper">
+            <div class="inner-row">
+                    <div class="single-service-content">
+                           <h1>Leadership Development</h1>
+
+                           <div class="single-service-row">
+                                 <div class="service-description">
+                                     <p>Employees today are better educated than previous generations, have easy access to knowledge, and have a wider range of options available to them as they chart their careers. </p>
+                                     <h4>The Nine Leadership Habits of Trust</h4>
+                                     <div class="service-list">
+                                         <p>This is a 10 step programme that explores how trust manifests itself in behaviours of leaders. Based on research by Dr John Blakey the founder of the Trusted Executive Foundation, the programme will help you to deliver outstanding results, create inspiring relationships, and secure a positive long-term legacy. You will get unique tools and techniques together with case studies to :</p>
+                                         <ul>
+                                             <li>	Understand the primary role of trust as a leadership skill.</li>
+                                             <li>All the models to your own leadership challenges </li>
+                                             <li>Develop strategies to build a high trust culture within your business.</li>
+                                         </ul>
+                                     </div>
+                                     
+                                 </div>
+                                 <div class="service-image">
+                                        <img src="../images/service2.jpg" alt="">
+                                 </div>
+                           </div>
+                          
+                    </div>
+            </div>
+
+
+            <section id="call-to-action">
+                <div class="inner-row">
+                       <div class="call-to-action-content">
+                                <h1>We curate bespoke solutions using scientific and creative approaches to address the specific needs of our clients.</h1>
+                                <p>Our methodologies are scientific, globally recognised and accredited, practical and results oriented.</p>
+
+                                <div class="btn-section">
+                                      <a href="../contact.html">Get in Touch</a>
+                                </div>
+                       </div>
+                </div>
+        </section>
+ 
+        <footer>
+             <div class="inner-row">
+                   <div class="footer-logo">
+                          <img src="../images/leap-logo.png" alt="">
+                   </div>
+                   <div class="footer-content">
+                          <p>Leap is headquartered in Nairobi, Kenya.</p>
+                          <p>Our programs and solutions have no boundaries - we serve executives, leaders, business owners and organizations across the globe.</p>
+                   </div>
+                   <div class="footer-social-links">
+                          <ul>
+                               <li><a href=""><i class="uil uil-facebook-f"></i></a></li>
+                               <li><a href=""><i class="uil uil-twitter"></i></a></li>
+                               <li><a href=""><i class="uil uil-instagram"></i></a></li>
+                               <li><a href=""><i class="uil uil-linkedin-alt"></i></a></li>
+                          </ul>
+                   </div>
+             </div>
+        </footer>
+        <div class="copyright">
+               <p>Leap Afrique &COPY;2022 All rights Reserved | Powered by <a href="">Amari Consulting Ltd</a></p>
+        </div>
+     </div>
+
+     <script>
+               const header = document.querySelector("header")
+               const i_moja = document.querySelectorAll(".navTrigger i")
+               const trigger_btn = document.querySelector(".navTrigger")
+               const navbar = document.querySelector("nav")
+
+
+               window.addEventListener("scroll", ()=>{
+                   if(window.scrollY > 100){
+                       header.classList.add("onscroll")
+                   }else{
+                       if(!header.classList.contains("onscroll")){
+                             header.classList.remove("onscroll")
+                       }
+                   }
+               })
+
+            trigger_btn.addEventListener("click", ()=>{
+                trigger_btn.classList.toggle("active")
+                navbar.classList.toggle("show")
+                if(window.innerWidth < 860){
+                    header.classList.toggle("whiten")
+                }
+            })
+     </script>
+    </body>
+</html>

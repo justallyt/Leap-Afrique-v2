@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap Afrique</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+       <header class="onscroll">
+             <div class="logo">
+                             <a href="">
+                                    <img src="../images/leap-logo.png" alt="">
+                             </a>
+                      </div>
+                      <nav>
+                           <ul>
+                                 <li><a href="../index.html">Home</a></li>
+                                 <li><a href="../about.html">About Us</a></li>
+                                 <li class="active"><a href="">Services</a></li>
+                                 <li><a href="../contact.html">Contact Us</a></li>
+                           </ul>
+
+                           <div class="nav-btn">
+                                  <a href="../contact.html">Get in Touch</a>
+                           </div>
+                      </nav>
+                      <span class="navTrigger">
+                           <i></i>
+                           <i></i>
+                           <i></i>
+                      </span>
+       </header>
+
+     <div class="single-wrapper">
+            <div class="inner-row">
+                    <div class="single-service-content">
+                           <h1>Individual Stress Management</h1>
+
+                           <div class="single-service-row">
+                                 <div class="service-description">
+                                      <p>Stress is a part of life. We all need some stress (eustress) to stay motivated and therefore, cannot avoid it.  We can, however, learn to manage it so that it does not manage us.</p>
+                                      <p>Stress is a part of life. We all need some stress (eustress) to stay motivated and therefore, cannot avoid it.  We can, however, learn to manage it so that it does not manage us.</p>
+                                      <p>Stress is a part of life. We all need some stress (eustress) to stay motivated and therefore, cannot avoid it.  We can, however, learn to manage it so that it does not manage us.</p>
+                                      <p>If you are experiencing symptoms of stress such </p>
+                                      <div class="service-list">
+                                        <ul>
+                                             <li>Tension headaches</li>
+                                             <li>Fatigue</li>
+                                             <li>Gastrointestinal problems</li>
+                                             <li>High blood pressure</li>
+                                             <li>Inability to focus</li>
+                                             <li>Feeling overwhelmed</li>
+                                             <li>Sleep disturbances</li>
+                                             <li>Feeling anxious about life situations.</li>
+                                        </ul>
+                                        <p>Then this program is for you.</p>
+                                   </div>
+                                 </div>
+                                 <div class="service-image">
+                                        <img src="../images/service10.jpg" alt="">
+                                 </div>
+                           </div>
+                           <p>Our evidence based 8 week stress management programme can be delivered to you virtually or in person. The programme includes engaging with a certified practitioner in stress management, psychoeducation, assessments, and access to our unique APP for stress management interventions.</p>
+                           <p>You have a choice of attending individually or by joining a group (which makes it engaging).</p>
+                           <p>During and after the 8 week programme, you will find: </p>
+                           <div class="service-list">
+                                <ul>
+                                     <li>Staying calm when faced with a stressful situation</li>
+                                     <li>Improved wellbeing and confidence</li>
+                                     <li>The ability to complete tasks by using coping techniques.</li>
+                                     <li>Sleep better</li>
+                                     <li>Control your weight</li>
+                                     <li>Get sick less often</li>
+                                     <li>Have less muscle tension</li>
+                                     <li>Be in a better mood</li>
+                                     <li>Get along better with family and friends</li>
+                                     <li>Overall improvement in quality of life</li>
+                                </ul>
+                           </div>
+                        
+                    </div>
+            </div>
+
+
+            <section id="call-to-action">
+                <div class="inner-row">
+                       <div class="call-to-action-content">
+                                <h1>We curate bespoke solutions using scientific and creative approaches to address the specific needs of our clients.</h1>
+                                <p>Our methodologies are scientific, globally recognised and accredited, practical and results oriented.</p>
+
+                                <div class="btn-section">
+                                      <a href="../contact.html">Get in Touch</a>
+                                </div>
+                       </div>
+                </div>
+        </section>
+ 
+        <footer>
+             <div class="inner-row">
+                   <div class="footer-logo">
+                          <img src="../images/leap-logo.png" alt="">
+                   </div>
+                   <div class="footer-content">
+                          <p>Leap is headquartered in Nairobi, Kenya.</p>
+                          <p>Our programs and solutions have no boundaries - we serve executives, leaders, business owners and organizations across the globe.</p>
+                   </div>
+                   <div class="footer-social-links">
+                          <ul>
+                               <li><a href=""><i class="uil uil-facebook-f"></i></a></li>
+                               <li><a href=""><i class="uil uil-twitter"></i></a></li>
+                               <li><a href=""><i class="uil uil-instagram"></i></a></li>
+                               <li><a href=""><i class="uil uil-linkedin-alt"></i></a></li>
+                          </ul>
+                   </div>
+             </div>
+        </footer>
+        <div class="copyright">
+               <p>Leap Afrique &COPY;2022 All rights Reserved | Powered by <a href="">Amari Consulting Ltd</a></p>
+        </div>
+     </div>
+
+     <script>
+               const header = document.querySelector("header")
+               const i_moja = document.querySelectorAll(".navTrigger i")
+               const trigger_btn = document.querySelector(".navTrigger")
+               const navbar = document.querySelector("nav")
+
+
+               window.addEventListener("scroll", ()=>{
+                   if(window.scrollY > 100){
+                       header.classList.add("onscroll")
+                   }else{
+                       if(!header.classList.contains("onscroll")){
+                             header.classList.remove("onscroll")
+                       }
+                   }
+               })
+
+            trigger_btn.addEventListener("click", ()=>{
+                trigger_btn.classList.toggle("active")
+                navbar.classList.toggle("show")
+                if(window.innerWidth < 860){
+                    header.classList.toggle("whiten")
+                }
+            })
+     </script>
+    </body>
+</html>

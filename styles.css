@@ -48,10 +48,10 @@ a{
 /* end of utility styling */
 #landing{
     width:100%;
-    height: 70vh;
-    background:url("images/landing2v2.png") no-repeat;
+    height:60vh;
+    background:url("images/landing2v22.png") no-repeat;
     background-size: contain;
-    background-position: 110% center;
+    background-position:  80% center;
     position:relative;
     
 }
@@ -117,7 +117,7 @@ header nav ul li.active a::after{
 }
 header .logo{
     width: 130px;
-    height:80px;
+    height:65px;
     margin:20px 0 0 5%;
 }
 header.onscroll .logo{
@@ -382,10 +382,6 @@ header nav .nav-btn{
     }
 }
 
-
-
-
-
 #landing .background-image{
       height:inherit;
 }
@@ -394,6 +390,7 @@ header nav .nav-btn{
      width:600px;
      margin:80px 0px 0px 5%;
      font-size: 50px;
+     font-family: "Sulphur point", sans-serif;
 }
 .landing-btn{
     display:block;
@@ -411,9 +408,43 @@ header nav .nav-btn{
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
+#linking{
+    padding:50px 0;
+}
 
+
+.linking-shifts ul{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:10px;
+}
+.linking-shifts ul li{
+     border:1px solid #e06122;
+     padding:10px 30px;
+     border-radius: 5px;
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+     -ms-border-radius: 5px;
+     -o-border-radius: 5px;
+     color: #e06122;
+     font-family: "Sulphur point", sans-serif;
+     cursor: pointer;
+     letter-spacing: 0.5px;
+}
+.linking-shifts ul li a{
+    color:#111;
+    display: inline-block;
+}
+.linking-shifts ul li.active{
+     background:#e06122;
+     color:#fff;
+}
+.linking-shifts ul li.active a{
+    color: #fff;
+}
 #about-us{
-    padding:100px 0;
+    padding:50px 0 100px 0;
 }
 .about-us-content{
     display:grid;
@@ -426,10 +457,11 @@ header nav .nav-btn{
     font-size:30px;
     color:#4b2466;
     line-height: 45px;
+    font-family: "Sulphur point", sans-serif;
 }
 .about-column p{
     font-size:18px;
-    font-family: "Sulphur point";
+    font-family: "Biko",sans-serif;
     line-height: 28px;
     margin-bottom: 10px;
 }
@@ -584,10 +616,11 @@ header nav .nav-btn{
       margin:auto;
       width:70%;
       text-align: center;
+      font-family: "Sulphur point", sans-serif;
 }
 .call-to-action-content p{
     margin:10px 0;
-    font-family: "Sulphur point", sans-serif;
+    font-family: "Biko", sans-serif;
     font-size:18px;
 }
 
@@ -601,7 +634,6 @@ footer{
 }
 .footer-content{
     text-align: center;
-    font-family: "Sulphur point", sans-serif;
 }
 .footer-content p{
     font-size:18px;
@@ -631,6 +663,7 @@ footer{
     -o-border-radius: 50%;
     cursor: pointer;
     color:#222;
+    border:1px solid;
     transition:all 0.5s ease-in-out;
     -webkit-transition:all 0.5s ease-in-out;
     -moz-transition:all 0.5s ease-in-out;
@@ -657,7 +690,6 @@ footer{
 }
 .copyright p{
     font-size:14px;
-    font-family: "Sulphur point", sans-serif;
 }
 /*About Us Styling */
 .main-wrapper{
@@ -671,6 +703,7 @@ footer{
 .about-content h2{
     font-size:40px;
     margin:15px 0;
+    font-family: "Sulphur point",sans-serif;
 }
 
 .about-page-row{
@@ -679,13 +712,12 @@ footer{
     gap:20px;
 }
 .about-page-column p{
-     font-family: "Sulphur point", sans-serif;
      font-size:18px;
      line-height: 25px;
      margin-bottom: 10px;
 }
+
 .mission-statement p{
-     font-family: "Sulphur point", sans-serif;
      font-size:18px;
 }
 .value-statement-row{
@@ -715,9 +747,9 @@ footer{
 .value-moja h4{
     font-size:20px;
     margin:5px 0;
+    font-family: "Sulphur point",sans-serif;
 }
 .value-moja p{
-    font-family: "Sulphur point", sans-serif;
     font-size:17px;
     line-height: 25px;
 }
@@ -748,10 +780,10 @@ footer{
 
 .founder-description h3{
     font-size:30px;
+    font-family: "Sulphur point", sans-serif;
 }
 .founder-description p{
     font-size:18px;
-    font-family: "Sulphur point", sans-serif;
     line-height: 28px;
     margin-bottom: 10px;
 }
@@ -777,7 +809,51 @@ footer{
     font-size: 18px;
     margin-top:10px;
 }
+.services-content-cont{
+    margin-top:40px;
+}
 
+.services-content p{
+    font-size:18px;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+/* Single service styling */
+.single-wrapper{
+    margin-top: 90px;
+    padding:40px 0;
+}
+.single-service-content{
+    padding-bottom: 50px;
+}
+.single-service-content h1{
+    font-family: "Sulphur point", sans-serif;
+    font-size:45px;
+    font-weight: 100;
+}
+.single-service-row{
+    margin-top:20px;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+}
+.single-service-content p,
+.service-list li{
+    font-size:18px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+.service-image{
+    height:450px;
+}
+.service-image img{
+    object-fit: cover;
+}
+.service-list ul{
+     list-style: circle;
+     width:90%;
+     margin:auto;
+}
 /*Contact Page Styling */
 .contact-content{
     padding:60px 0 80px;
@@ -930,6 +1006,10 @@ footer{
     .map-side iframe{
         width:100%;
     }
+    .single-service-row{
+        grid-template-columns: repeat(1,1fr);
+        margin-bottom: 10px;
+    }
 }
 
 
@@ -1006,6 +1086,7 @@ footer{
     .founder-image{
          width:100%;
     }
+
 }
 @media(max-width:400px){
     .service-moja-column{
@@ -1033,6 +1114,13 @@ footer{
     }
     .map-side iframe{
         height:300px;
+    }
+    .single-service-content h1{
+        font-size:30px;
+        text-align: center;
+    }
+    .service-image{
+        height:auto;
     }
 }
 

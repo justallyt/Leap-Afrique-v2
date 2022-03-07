@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap Afrique</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+       <header class="onscroll">
+             <div class="logo">
+                             <a href="">
+                                    <img src="../images/leap-logo.png" alt="">
+                             </a>
+                      </div>
+                      <nav>
+                           <ul>
+                                 <li><a href="../index.html">Home</a></li>
+                                 <li><a href="../about.html">About Us</a></li>
+                                 <li class="active"><a href="">Services</a></li>
+                                 <li><a href="../contact.html">Contact Us</a></li>
+                           </ul>
+
+                           <div class="nav-btn">
+                                  <a href="../contact.html">Get in Touch</a>
+                           </div>
+                      </nav>
+                      <span class="navTrigger">
+                           <i></i>
+                           <i></i>
+                           <i></i>
+                      </span>
+       </header>
+
+     <div class="single-wrapper">
+            <div class="inner-row">
+                    <div class="single-service-content">
+                           <h1>Organization Stress Management</h1>
+
+                           <div class="single-service-row">
+                                 <div class="service-description">
+                                      <p>Workers spend 90,000 hours or 50% of waking hours at the workplace (Thomson, 2016). A report by Gallup in 2021 on “The State of the Global Workforce” cites that negative emotions such as worry, stress and sadness among employees reached record levels in 2020. In addition, Gallup found that nearly 7 in 10 employees are struggling or suffering rather than thriving in their overall lives. Eighty percent (80%) are not engaged or are actively disengaged at work, costing the global economy $ 8.1 trillion in lost productivity each year! According to Galuup, this problem has been existing since a decade and before the  Covid-!9 Pandemic</p>
+                                      <p>A survey on 1,500 leaders in 46 countries in 2020,  found that 89% of the respondents said that work was getting worse and 62% indicated that they were experiencing burnout (Moss, 2020). A 2021 research study on workplace stress on human resources leaders in Nairobi Metropolis found that 89% of the respondents showed elevated levels of stress. The study also found positive correlations between workplace stress and anxiety, depression and substance use (Alibhai et al., 2021; 2022).</p>
+                                 </div>
+                                 <div class="service-image">
+                                        <img src="../images/service9.jpg" alt="">
+                                 </div>
+                           </div>
+                           <p>The cost of workplace stress to organisations cannot be understated. Sickness absences, presenteeism (reduction in performance due to health issues), turnover, accidents, injuries, workplace conflict, strained employee relations and insurance premiums has a negative  impact on productivity and resultant performance of organisations together with the burden of cost.</p>
+                           <p>Thankfully, this trend can potentially be reversed by creating a culture that maximises the potential and wellbeing of every employee!</p>
+                           <p>At the Leap Centre for Stress Management we have evidence based tools and techniques to partner with you to create a proactive workplace stress management environment.</p>
+                           <p>Your deployment team will have access to a toolkit that includes:</p>
+                           <div class="service-list">
+                                <ul>
+                                     <li>A business case for stress management</li>
+                                     <li>Conducting a stress audit</li>
+                                     <li>Developing and implementing a comprehensive stress policy</li>
+                                     <li>Establishing an approach to risk management regarding workplace stress</li>
+                                     <li>implementing appropiate stress prevention and reduction solutions</li>
+                                     <li>Measuring and evaluating effectives of the interventions.</li>
+                                </ul>
+                           </div>
+                           <p>Your people will have access to our one of a kind app for stress management</p>
+                    </div>
+            </div>
+
+
+            <section id="call-to-action">
+                <div class="inner-row">
+                       <div class="call-to-action-content">
+                                <h1>We curate bespoke solutions using scientific and creative approaches to address the specific needs of our clients.</h1>
+                                <p>Our methodologies are scientific, globally recognised and accredited, practical and results oriented.</p>
+
+                                <div class="btn-section">
+                                      <a href="../contact.html">Get in Touch</a>
+                                </div>
+                       </div>
+                </div>
+        </section>
+ 
+        <footer>
+             <div class="inner-row">
+                   <div class="footer-logo">
+                          <img src="../images/leap-logo.png" alt="">
+                   </div>
+                   <div class="footer-content">
+                          <p>Leap is headquartered in Nairobi, Kenya.</p>
+                          <p>Our programs and solutions have no boundaries - we serve executives, leaders, business owners and organizations across the globe.</p>
+                   </div>
+                   <div class="footer-social-links">
+                          <ul>
+                               <li><a href=""><i class="uil uil-facebook-f"></i></a></li>
+                               <li><a href=""><i class="uil uil-twitter"></i></a></li>
+                               <li><a href=""><i class="uil uil-instagram"></i></a></li>
+                               <li><a href=""><i class="uil uil-linkedin-alt"></i></a></li>
+                          </ul>
+                   </div>
+             </div>
+        </footer>
+        <div class="copyright">
+               <p>Leap Afrique &COPY;2022 All rights Reserved | Powered by <a href="">Amari Consulting Ltd</a></p>
+        </div>
+     </div>
+
+     <script>
+               const header = document.querySelector("header")
+               const i_moja = document.querySelectorAll(".navTrigger i")
+               const trigger_btn = document.querySelector(".navTrigger")
+               const navbar = document.querySelector("nav")
+
+
+               window.addEventListener("scroll", ()=>{
+                   if(window.scrollY > 100){
+                       header.classList.add("onscroll")
+                   }else{
+                       if(!header.classList.contains("onscroll")){
+                             header.classList.remove("onscroll")
+                       }
+                   }
+               })
+
+            trigger_btn.addEventListener("click", ()=>{
+                trigger_btn.classList.toggle("active")
+                navbar.classList.toggle("show")
+                if(window.innerWidth < 860){
+                    header.classList.toggle("whiten")
+                }
+            })
+     </script>
+    </body>
+</html>
